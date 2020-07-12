@@ -3,9 +3,9 @@
 ​	This is an unofficial implementation of paper HVNet.Code will be released soon.
 
 
-```
 The author only provide bev result for Pose Loss, so I compare my result with paper.
 Cyclist and Car don't have too much different with paper, but Pedestrian is lower than paper for 4 point in AP
+```
 Pose loss result
 Pedestrian AP_R40@0.50, 0.50, 0.50:
 bbox AP:78.9463, 74.2541, 70.1590
