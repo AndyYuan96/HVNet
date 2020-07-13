@@ -39,6 +39,4 @@ aos  AP:97.42, 91.61, 88.81
 For corner loss, I didn't get a similar result with paper, but the training loss looks reasonable. Orange one is pos loss
 ![](Corner_loss_vs_Pos_loss.png)
 
-
-
 Welcome to contribute if you have any improvement.
