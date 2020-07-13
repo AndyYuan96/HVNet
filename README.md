@@ -1,11 +1,20 @@
 # HVNet: Hybrid Voxel Network for LiDAR Based 3D Object Detection
 
-​	This is an unofficial implementation of paper HVNet.Code will be released soon.
+This is an unofficial implementation of paper HVNet. And the code is based on [PCDet](https://github.com/open-mmlab/OpenPCDet) and [PointCloudDynamicVoxel](https://github.com/AndyYuan96/PointCloudDynamicVoxel).
+Please follow PCDet and PointCloudDynamicVoxel's install guide.
 
+```
+remote:
+	project on server for training
+local:
+	project on local machine to debug and I add some visualization code.
+```
 
 The author only provide bev result for Pose Loss, so I compare my result with paper.
 Cyclist and Car don't have too much different with paper, but Pedestrian is lower than paper for 4 point in AP
+
 ```
+model: remote/pos_loss/checkpoint_epoch_66.pth
 Pose loss result
 Pedestrian AP_R40@0.50, 0.50, 0.50:
 bbox AP:78.9463, 74.2541, 70.1590
@@ -24,6 +33,11 @@ bev  AP:94.4907, 88.2296, 85.4464
 aos  AP:97.42, 91.61, 88.81
 ```
 
-```
-For corner loss, I didn't get a similar result with paper, but the training loss looks reasonable.
-```
+
+
+For corner loss, I didn't get a similar result with paper, but the training loss looks reasonable. Orange one is pos loss
+![](Corner_loss_vs_Pos_loss.png)
+
+
+
+Welcome to contribute if you have any improvement.
