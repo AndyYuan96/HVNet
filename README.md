@@ -15,7 +15,7 @@ The author only provide bev result for Pose Loss, so I compare my result with pa
 Cyclist and Car don't have too much different with paper, but Pedestrian is lower than paper for 4 point in AP
 
 ```
-model: remote/pos_loss/checkpoint_epoch_66.pth
+model: remote/output/pos_loss/checkpoint_epoch_66.pth
 Pose loss result
 Pedestrian AP_R40@0.50, 0.50, 0.50:
 bbox AP:78.9463, 74.2541, 70.1590
